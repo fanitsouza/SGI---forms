@@ -27,6 +27,9 @@ body {
     overflow-x: hidden;
 }
 
+/***************************NAVEGAÇÃO*******************************/
+/*******************************************************************/
+
 .container {
     position: fixed;
     top: 0;
@@ -344,7 +347,8 @@ body {
     pointer-events: none;
 }
 
-/***************************************************/
+/***************************HOME-CONTAINER*********************/
+/**************************************************************/
 
 .home-container {
     position: absolute;
@@ -426,6 +430,50 @@ body {
     object-fit: cover;
 }
 
+
+/**********************HOME-CONTAINER-OPCOES*******************/
+/**************************************************************/
+
+.j1 {
+    text-align: center;
+    padding: 0;
+}
+.j1 .opcoes {
+    text-align: 82px;
+}
+
+.j1 .opcoes {
+    margin: 10px auto;
+    width: 800px;
+    height: 30px;
+    list-style: none;
+    background: var(--white)
+}
+
+.j1 .opcoes li {
+    margin-top: 8px;
+    display: inline-block;
+    background: var(--yellow);
+    border-radius: 15px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.j1 .opcoes li a {
+    text-decoration: none;
+    color: var(--light-blue);
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 20px;
+    font-weight: 400;    
+    padding: 9px 25px;
+}
+
+.j1 .opcoes li a:hover {
+    background: var(--light-blue);
+    color: var(--white);
+    border-radius: 15px;
+}
 
 /***************************CARDS*******************************/
 /**************************************************************/
@@ -722,6 +770,9 @@ body {
 /***************************************************************/
 .formularios-container {
     display: flex;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+    min-height: 200px;
     justify-content: space-between;
     width: 100%;
 }
@@ -746,7 +797,7 @@ body {
     background: #fff;
     padding: 25px;
     margin-top: 40px;
-    margin-left: 20px;
+    margin-left: 10px;
     margin-right: 10px;
     border-radius: 5px;
     box-shadow: 0 0 15px rgba(241, 237, 237, 0.2);
@@ -993,27 +1044,33 @@ body {
         height: auto;
     }
 
-    .navigation {
+    .container {
         left: -300px;
     }
 
-    .navigation.active {
+    .container.close .nav-list .sub-menu {
         left: 0;
         width: 300px;
     }
 
-    .main {
+    .home-container {
         width: 100%;
         left: 0;
     }
 
-    .main.active {
+    .home-container.show {
         width: calc(100% - 300px);
         left: 300px;
     }
 
     .cardBox {
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .forms, .forms-end {
+        max-width: 100%;
+        width: 100%;
+        margin: 10px 0;
     }
 
 }
@@ -1026,6 +1083,12 @@ body {
     .cardHeader h2{
         font-weight: 600;
         font-size: 18px;
+    }
+
+    .forms, .forms-end {
+        max-width: 100%;
+        width: 100%;
+        margin: 10px 0;
     }
 }
 
@@ -1046,13 +1109,17 @@ body {
         width: 600px;
     }
 
-    .navigation {
+    .formularios-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .container {
         width: 100%;
         left: -100%;
         z-index: 1000;
     }
 
-    .navigation.active {
+    .container.close{
         left: 0;
         width: 100%;
     }
@@ -1068,10 +1135,17 @@ body {
         color: var(--white);
     }
 
-    .main,
-    .main.active {
+    .home-container,
+    .home-container.close {
         width: 100%;
         left: 0;
+    }
+
+    .forms, .forms-end {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
     }
 }
 
@@ -1082,29 +1156,3 @@ canvas {
 
 /************************************************/
 
-@media (max-width: 400px) {
-    .container.close .nav-list .sub-menu {
-        display: none;
-    }
-
-    .container {
-        width: 60px;
-    }
-
-    .container.close {
-        width: 0;
-    }
-
-    .home-container {
-        left: 60px;
-        width: calc(100% - 60px);
-        z-index: 100;
-    }
-
-    .container.close ~ .home-container {
-        width: 100%;
-        left: 0;
-    }
-
-
-}
