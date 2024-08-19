@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SGI</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <div class="container close">
+            <div class="logo">
+                <span class="icon"><img src="assets/logo.png" alt="Logo SGI"></span>
+                <span class="title">SGI</span>
+            </div>
+
+            <ul class="nav-list">
+                <li>
+                    <a href="#">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span class="link-name"> Painel Principal</span>   
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a href="#" class="link-name">Painel Principal</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <span class="link-name"> Cadastro </span>
+                        </a>
+                        <i class="fa fa-caret-down arrow" aria-hidden="true"></i>
+                    </div>
+
+                    <ul class="sub-menu">
+                        <li><a href="#" class="link-name"></a></li>
+                        <li><a href="#">Membros</a></li>
+                        <li><a href="#">Filiais</a></li>
+                        <li><a href="#">Grupos</a></li>
+                        <li><a href="#">Tarefas</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span class="link-name"> Eventos</span>
+                        </a>
+                        <i class="fa fa-caret-down arrow" aria-hidden="true"></i>
+                    </div>
+
+                    <ul class="sub-menu">
+                        <li><a href="#" class="link-name"></a></li>
+                        <li><a href="#">Aniversariantes</a></li>
+                        <li><a href="#">Cultos</a></li>
+                        <li><a href="#">Reuniões</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class="fa fa-line-chart" aria-hidden="true"></i>
+                            <span class="link-name"> Financeiro</span>
+                        </a>
+                        <i class="fa fa-caret-down arrow" aria-hidden="true"></i>
+                    </div>
+
+                    <ul class="sub-menu">
+                        <li><a href="#" class="link-name"></a></li>
+                        <li><a href="#">Contas</a></li>
+                        <li><a href="#">Dízimos</a></li>
+                        <li><a href="#">Doações</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Patrimônios</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <span class="link-name"> Ajuda</span>
+                    </a>
+                    <ul class="sub-menu blank">
+                        <li><a href="#" class="link-name"> Ajuda</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="profile-details">
+                        <div class="profile-content">
+                            <img src="assets/perfil.png" alt="">
+                        </div>
+
+                        <div class="name-job">
+                            <div class="name">Maria Aparecida</div>
+                        </div>
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="home-container">
+            <div class="home-content">
+                    <div class="ic"><i class="fa fa-bars" aria-hidden="true"></i></div>
+
+                <!--BARRA DE PESQUISA-->
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Buscar">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </label>
+                </div>
+
+                <!--BARRA DE USUÁRIO-->
+                <div class="user">
+                    <img src="assets/perfil.png">
+                </div>
+            </div>
+
+<!------------------------------------------------------------------------HOME-CONTAINER-------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------>
+            <div class="formularios-container">
+                <div class="forms">
+                    <div class="form-title">
+                        <h2>Novo Membro</h2>
+                    </div>
+                    <form  action="#">
+                                    <div class="form">                        
+                                        <div class="input-box">
+                                            <label>Nome</label>
+                                            <input required="" placeholder="Nome completo" type="text">
+                                        </div>
+                                        <div class="column">
+                                            <div class="input-box">
+                                            <label>CPF</label>
+                                            <input required="" placeholder="000.000.000-00" type="cpf">
+                                            </div>
+                                            <div class="input-box">
+                                                <label>RG</label>
+                                                <input required="" placeholder="000000-00" type="cpf">
+                                            </div>
+                                            <div class="input-box">
+                                            <label>Data Nascimento</label>
+                                            <input required="" placeholder="Enter birth date" type="date">
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="input-box address">
+                                            <label>Id do Superior</label>
+                                            <input required="" placeholder="Id superior" type="text">
+                                        </div>
+                                        <div class="gen-box">
+                                            <label>Estado Civil</label>
+                                            <div class="gen-option">
+                                            <div class="gen">
+                                                <input checked="" name="gen" id="check-male" type="radio">
+                                                <label for="check-male">Solteiro(a)</label>
+                                            </div>
+                                            <div class="gen">
+                                                <input name="gen" id="check-female" type="radio">
+                                                <label for="check-female">Divorciado(a)</label>
+                                            </div>
+                                            <div class="gen">
+                                                <input name="gen" id="check-other" type="radio">
+                                                <label for="check-other">Viúvo(a)</label>
+                                            </div>
+                                            <div class="gen">
+                                                <input name="gen" id="check-other" type="radio">
+                                                <label for="check-other">Casado(a)</label>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="input-box address">
+                                            <label>Email</label>
+                                            <input required="" placeholder="Insira um Email" type="text">
+                                        </div>
+                                        <div class="input-box address">
+                                            <label>Senha</label>
+                                            <input required="" placeholder="Digite uma senha" type="text">
+                                        </div>
+                                        <div class="input-box address">
+                                            <label for="arquivo">Escolha uma imagem:</label>
+                                            <input accept=".jpg, .jpeg, .png, .gif, .pdf" class="inpdddut" name="arquivo" id="arquivo" type="file">
+                                        </div>
+                                    </div>
+                                
+                </div>
+                                    <div class="forms-end">
+                                        <div class="form-end-title">
+                                            <h2>Endereço</h2>
+                                        </div>
+                                        <div class="form-end">
+                                            <div class="input-box-end">
+                                                <label>Rua</label>
+                                                <input required="" placeholder="Rua" type="text">
+                                            </div>
+                                            <div class="column-end">
+                                                <div class="input-box-end">
+                                                <label>Número</label>
+                                                <input required="" placeholder="0000" type="number">
+                                                </div>
+                                                <div class="input-box-end">
+                                                    <label>Bairro</label>
+                                                    <input required="" placeholder="Digite o nome do bairro" type="text">
+                                                </div>
+                                                <div class="input-box-end">
+                                                    <label>Cidade</label>
+                                                    <input required="" placeholder="Digite o nome da Cidade" type="text">
+                                                </div>
+                                                <div class="input-box-end">
+                                                    <label>Estado</label>
+                                                    <input required="" placeholder="Estado" type="text">
+                                                </div>
+                                                <div class="input-box-end">
+                                                    <label>Telefone</label>
+                                                    <input required="" placeholder="(00) 00000-0000" type="tel">
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                               
+            </div>
+                    <div class="form-info-ig">
+                        <div class="forms-ig">
+                            <div class="form-title-ig">
+                                    <h2>Informações da Igreja</h2>
+                            </div>
+                            <div class="form-ig">
+                                    
+                                    <div class="column-ig">
+                                        <div class="select-box-ig">
+                                                <select>
+                                                <option hidden="">Sede</option>
+                                                <option>Manaus</option>
+                                                </select>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="column-ig">
+                                        <div class="select-box-ig">
+                                                <select>
+                                                <option hidden="">Status</option>
+                                                <option>Ativo</option>
+                                                <option>Inativo</option>
+                                                </select>
+                                        </div>
+                                    
+                                    </div>
+                                    <div class="column-ig">
+                                        <div class="select-box-ig">
+                                                <select>
+                                                <option hidden="">Filial</option>
+                                                <option>Filial 1</option>
+                                                </select>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="column-ig">
+                                        <div class="select-box-ig">
+                                                <select>
+                                                <option hidden="">Status</option>
+                                                <option>Ativo</option>
+                                                <option>Inativo</option>
+                                                </select>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="column-ig">
+                                        <div class="select-box-ig">
+                                                <select>
+                                                <option hidden="">Nível de Acesso</option>
+                                                <option>Administrador</option>
+                                                <option>Isuário</option>
+                                                </select>
+                                        </div>
+                                    
+                                    </div>
+
+                                    <div class="column-ig">
+                                        <div class="select-box-ig">
+                                                <select>
+                                                <option hidden="">Cargo</option>
+                                                <option>Ativo</option>
+                                                <option>Inativo</option>
+                                                </select>
+                                        </div>
+                                    
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                        <div class="submit">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+       
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="my_chart.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
