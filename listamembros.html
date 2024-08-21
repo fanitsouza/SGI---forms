@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SGI</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="tablelist.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="main.js" defer></script>
+    </head>
+
+    <body>
+        <div class="container close">
+            <div class="logo">
+                <span class="icon"><img src="assets/logo.png" alt="Logo SGI"></span>
+                <span class="title">SGI</span>
+            </div>
+
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                        <span class="link-name"> Painel Principal</span>   
+                    </a>
+                    
+                </li>
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class="fa fa-users" aria-hidden="true"></i>
+                            <span class="link-name"> Cadastro </span>
+                        </a>
+                        <i class="fa fa-caret-down arrow" aria-hidden="true"></i>
+                    </div>
+
+                    <ul class="sub-menu">
+                        <li><a href="#" class="link-name"></a></li>
+                        <li><a href="#">Membros</a></li>
+                        <li><a href="#">Filiais</a></li>
+                        <li><a href="#">Grupos</a></li>
+                        <li><a href="#">Tarefas</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <span class="link-name"> Eventos</span>
+                        </a>
+                        <i class="fa fa-caret-down arrow" aria-hidden="true"></i>
+                    </div>
+
+                    <ul class="sub-menu">
+                        <li><a href="#" class="link-name"></a></li>
+                        <li><a href="#">Aniversariantes</a></li>
+                        <li><a href="#">Cultos</a></li>
+                        <li><a href="#">Reuniões</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <div class="icon-link">
+                        <a href="#">
+                            <i class="fa fa-line-chart" aria-hidden="true"></i>
+                            <span class="link-name"> Financeiro</span>
+                        </a>
+                        <i class="fa fa-caret-down arrow" aria-hidden="true"></i>
+                    </div>
+
+                    <ul class="sub-menu">
+                        <li><a href="#" class="link-name"></a></li>
+                        <li><a href="#">Contas</a></li>
+                        <li><a href="#">Dízimos</a></li>
+                        <li><a href="#">Doações</a></li>
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Patrimônios</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        <span class="link-name"> Ajuda</span>
+                    </a>
+                    
+                </li>
+
+                <li>
+                    <div class="profile-details">
+                        <div class="profile-content">
+                            <img src="assets/perfil.png" alt="">
+                        </div>
+
+                        <div class="name-job">
+                            <div class="name">Maria Aparecida</div>
+                        </div>
+                            <i class="fa fa-sign-out" aria-hidden="true"></i>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+<!------------------------------------------------------------------------HOME-CONTAINER-------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------>
+ 
+
+        <div class="home-container">
+            <div class="home-content">
+                    <div class="toggle">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+
+                <!--BARRA DE PESQUISA-->
+                    <div class="search">
+                        <label>
+                            <input type="text" placeholder="Buscar">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </label>
+                    </div>
+
+                    <!--BARRA DE USUÁRIO-->
+                    <div class="user">
+                        <img src="assets/perfil.png">
+                    </div>
+            </div>
+
+<!------------------------------------------------------------------------OPÇÕES/HOME-CONTAINER-------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------>
+ 
+            <div class="j1">
+                <ul class="opcoes">
+                    <li><a href="cadastromembros.html">Cadastro</a></li>
+                    <li><a href="listamembros.html">Pesquisar</a></li>
+                    
+                </ul>
+            </div>
+
+
+<!------------------------------------------------------------------------LISTA-CONTAINER/HOME-CONTAINER-------------------------------------------------------------------------->
+<!------------------------------------------------------------------------------------------------------------------------------------------------------>
+
+            <div class="table-list-container">
+
+                <div class="table-list">
+                    <div class="table__body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th> id </th>
+                                    <th> Foto </th>
+                                    <th> name </th>
+                                    <th> status </th>
+                                    <th> date </th>
+                                    <th>Editar</th>
+                                    <th>Excluir</th>
+                                    <th>Relatório</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> 1 </td>
+                                    <td><img src="assets/perfil.png" alt=""></td>
+                                    <td> John Doe </td>
+                                    <td> pending </td>
+                                    <td> 2022-01-01 </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                                           
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                         
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a href="#">
+                                            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                                            
+                                        </a>
+                                    </td>
+                                    
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>    
+       
+        </div>            
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+    <script src="my_chart.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
